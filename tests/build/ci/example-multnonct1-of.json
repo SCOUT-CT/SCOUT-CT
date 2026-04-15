@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "source_file": "target-math_multnonct1-of.c",
+      "line": 12,
+      "type": "branching",
+      "color": "red"
+    },
+    {
+      "source_file": "target-math_multnonct1-of.c",
+      "line": 27,
+      "type": "branching",
+      "color": "red"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "source_file": "math_op.c",
+      "line": 9,
+      "type": "branching",
+      "color": "red"
+    },
+    {
+      "source_file": "math_op.c",
+      "line": 21,
+      "type": "branching",
+      "color": "red"
+    }
+  ]
+}

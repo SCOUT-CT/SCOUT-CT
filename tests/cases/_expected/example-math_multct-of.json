@@ -1,0 +1,10 @@
+{
+  "results": [
+    {
+      "source_file": "target-math_multct-of.c",
+      "line": 20,
+      "type": "branching",
+      "color": "orange"
+    }
+  ]
+}

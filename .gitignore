@@ -1,0 +1,15 @@
+__pycache__
+.venv
+.vscode
+.devcontainer
+binaries/report_back
+*.a
+*.o
+*.so
+*/bin/*
+*.pkl
+explored_states.pkl
+results/*
+!.gitkeep
+tests/build/tmp/*
+.pdm-python

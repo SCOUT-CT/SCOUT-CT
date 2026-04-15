@@ -1,0 +1,17 @@
+app_config:
+  min_consolidation_threshold: 100
+  max_consolidation_threshold: 1000
+  source_code_dirs:
+    - tests/cases
+test_config:
+  cases_bin_dir: tests/build/tmp
+  cases_src_dir: tests/cases
+  results_dir: results
+  cases_expected_dir: tests/cases/_expected
+  cases_bin:
+    - functional-write_from_array-of
+  compiler_info_file: compiler_info.txt
+  compiler: gcc
+  fail: false
+  test_mode: True
+  save_explored_states: False

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "ya_cttool"
+version = "0.1.0"
+description = "A tool to detect time leaks from binary files"
+authors = [
+    {name = "DM & JFP", email = ""},
+]
+dependencies = [
+    "angr==9.2.148",
+    "pyelftools==0.32",
+    "setuptools==80.9.0",
+    "pandas>=2.3.1",
+    "tqdm>=4.67.1",
+    "pyyaml>=6.0.2",
+    "gitpython>=3.1.44",
+    "marshmallow>=4.0.0",
+    "python-json-logger>=3.3.0",
+    "psutil>=7.0.0",
+    "confz>=2.1.0",
+    "typer>=0.16.1",
+    "marshmallow-dataclass>=8.7.1",
+    "marshmallow-enum>=1.5.1",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+scoutct = "ya_cttool.cli:app"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+test-suite-light = "python -m tests.run --config config/test-ci.yml run"
+check-results = "python -m tests.run --config config/test-ci.yml check_results"

@@ -1,0 +1,10 @@
+{
+  "results": [
+    {
+      "source_file": "target-math_multnonct2-of.c",
+      "line": 12,
+      "type": "branching",
+      "color": "red"
+    }
+  ]
+}

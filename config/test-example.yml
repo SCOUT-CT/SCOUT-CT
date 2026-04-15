@@ -1,0 +1,28 @@
+app_config:
+  min_consolidation_threshold: 32
+  max_consolidation_threshold: 64
+  source_code_dirs:
+    - tests/cases/ct-examples
+    - bench-libs
+  hooks:
+    plugin: ""
+    symbol_names: []
+test_config:
+  cases_bin_dir: tests/build/tmp
+  cases_src_dir: tests/cases
+  results_dir: results
+  cases_expected_dir: tests/cases/_expected
+  cases_bin:
+    # - example-math_multct
+    # - example-math_multnonct1
+    # - example-math_multnonct2
+    # - example-math_multnonct3
+    # - example-math_sqmct
+    # - example-math_sqmnonct
+    - example-passwordct
+    - example-passwordnonct
+  compiler_info_file: compiler_info.txt
+  compiler: gcc
+  fail: false
+  test_mode: True
+  save_explored_states: False

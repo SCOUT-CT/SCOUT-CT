@@ -1,0 +1,27 @@
+app_config:
+  min_consolidation_threshold: 10
+  max_consolidation_threshold: 1000
+  source_code_dirs:
+    - tests/build/ci
+  hooks:
+    plugin: ""
+    symbol_names: []
+test_config:
+  cases_bin_dir: tests/build/ci
+  cases_src_dir: tests/cases
+  results_dir: results
+  cases_expected_dir: tests/build/ci
+  cases_bin:
+    - atlas1_report
+    - example-multct-of
+    - example-multnonct1-of
+    - example-multnonct2-of
+    - example-multnonct3-of
+    - functional-write_from_array-of
+    - aes-enc-of
+    - br-aes_ct_cbcenc
+  compiler_info_file: compiler_info.txt
+  compiler: gcc
+  fail: false
+  test_mode: true
+  save_explored_states: true

@@ -1,0 +1,13 @@
+min_consolidation_threshold: 256
+max_consolidation_threshold: 10000
+source_code_dirs:
+  - tests/cases
+  - bench-libs
+hooks:
+  plugin: ""
+  symbol_names: []
+
+# hooks:
+#   plugin: plugins.scalar_mult_base_uniform
+#   symbol_names:
+#     - hydro_random_ensure_initialized

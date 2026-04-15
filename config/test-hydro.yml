@@ -1,0 +1,22 @@
+app_config:
+  min_consolidation_threshold: 20000
+  max_consolidation_threshold: 50000
+  source_code_dirs:
+    - tests/cases
+    - bench-libs
+  hooks:
+    plugin: ya_cttool.plugins.hydrogen
+    symbol_names:
+      - hydro_random_ensure_initialized
+test_config:
+  cases_bin_dir: tests/build/tmp
+  cases_src_dir: tests/cases
+  results_dir: results
+  cases_expected_dir: tests/cases/_expected
+  cases_bin:
+    - hydrogen-sign_final_create_bis
+  compiler_info_file: compiler_info.txt
+  compiler: gcc
+  fail: false
+  test_mode: True
+  save_explored_states: False

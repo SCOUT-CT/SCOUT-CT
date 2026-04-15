@@ -1,0 +1,3 @@
+angr==9.2.148
+pyelftools==0.32
+setuptools==78.1.0

@@ -1,0 +1,20 @@
+app_config:
+  min_consolidation_threshold: 8192
+  max_consolidation_threshold: 17000
+  source_code_dirs:
+    - tests/build/ci
+  hooks:
+    plugin: ""
+    symbol_names: []
+test_config:
+  cases_bin_dir: tests/build/ci
+  cases_src_dir: tests/cases
+  results_dir: results
+  cases_expected_dir: tests/build/ci
+  cases_bin:
+    - aes-enc-of
+  compiler_info_file: compiler_info.txt
+  compiler: gcc
+  fail: false
+  test_mode: true
+  save_explored_states: false

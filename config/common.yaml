@@ -1,0 +1,10 @@
+outputs:
+  dir: results
+  save_explored_states: false
+  save_results: false
+  save_metadata: true
+logging:
+  file_level: info
+  stream_level: warning
+progress_bars_disabled: false
+timeout: 60

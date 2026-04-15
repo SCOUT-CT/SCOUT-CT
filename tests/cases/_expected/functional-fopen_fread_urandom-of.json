@@ -1,0 +1,10 @@
+{
+  "results": [
+    {
+      "source_file": "fopen_fread_urandom.c",
+      "line": 34,
+      "type": "branching",
+      "color": "red"
+    }
+  ]
+}
